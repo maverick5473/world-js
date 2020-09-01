@@ -25,8 +25,8 @@ define(function(require) {
 
     world.event.add('seedAdded', 'test', function(data) {
       deepEqual(data.seed.iq, 4, 'Seed has IQ value (3 + 1)');
-      deepEqual(data.seed.world.statistic.maxIQ,     4,  'Max IQ');
-      deepEqual(data.seed.world.statistic.yearMaxIQ, 10, 'Year of max IQ');
+      deepEqual(data.seed.world.statistic.maxIQ,     10,  'Max IQ');
+      deepEqual(data.seed.world.statistic.yearMaxIQ, 24, 'Year of max IQ');
       start();
     });
 
